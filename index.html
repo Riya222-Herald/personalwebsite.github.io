@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/9abf2d9c01.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logoriya.jpg" class="logo"> 
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About </a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact </a></li>
+                    <li><a href="#reference">Reference</a></li>
+                    <span><i class="fas fa-times" onclick="closemenu()"></i></span>
+                    
+                </ul>
+                <span><i class="fas fa-bars" onclick="openmenu()"></i></span>
+            </nav> 
+            <div class="header-text">
+                <span><h1>I am <span> Riya Pradhan</span></h1>
+                <p>This is my official portfolio website.</p>
+                </span>
+            </div>
+            
+        </div>
+    </div>
+<!-- ------------about----------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/AboutMe.png"> <!--Add your 2nd image here-->
+                </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>I am an It student and currently pursuing my bachelors degree from Herald College Kathmandu.
+                           I have always been a active learner and a student who hold a great enthusiasm for IT fields
+                           as I have always been fascinated by the world of computers and programming.</p> <!-- Write about yourself-->
+                           <div class="tab-titles">
+                            <p class="tab-links "><a href="#">Education</a></p>
+                           </div>
+                           <div class="tab-contents">
+                            <ul>
+                                <li><span>Maitidevi Boarding High School</span><br>2007 To 2020</li>
+                                <li><span>Trinity International College</span><br>2020 To 2022</li>
+                                <li><span>Herald College Kathmandu</span><br>2022 To ongoing</li>
+                            </ul>
+                           </div>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+<!-- ------------Skills---------- -->
+<div class="skills">
+    <div class="container">
+        <h1 class="sub-title">My Skills</h1>
+        <div class="skills-list">
+            <div>
+                <i class="fa-brands fa-html5"></i>
+                <h2>HTML</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-python"></i>
+                <h2>Python</h2>
+            </div>
+            <div>
+                <i class="fa-regular fa-c"></i>
+                <h2>C Programing Language</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-css3"></i>
+                <h2>CSS</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-java"></i>
+                <h2>JAVA</h2>
+            </div>
+            <div>
+                <i class="fa-brands fa-js"></i>
+                <h2>JavaScript</h2>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-------------------Portfolio------------------------>
+<div id="portfolio">
+    <div class="container">
+        <div class="sub-title">My Work</div>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/mywork.PNG">
+                <div class="layer">
+                    <h3>Beauty School Website</h3>
+                    <p>The website that I created in the plus two for my project in the college</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/tesla.PNG">
+                <div class="layer">
+
+                    <h3>Tesla Website</h3>
+                    <p>The Tesla website that I created using Google Site in the plus two for my project in the college</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------------Contact-------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i><span> reeya7839@gmail.com</span></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/riya.pradhan.7564"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.linkedin.com/in/riya-pradhan-88b2aa259/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Riya222-Herald"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+</div>
+<!---------Reference Page-------->
+<div id="reference">
+    <div class="container">
+        <div class="sub-title">Reference</div>
+        <p><span>"This website was created by Riya Pradhan (220117)"</span></p>
+    </div>
+    <div class="copyright">
+        <p>Copyright @ Riya.</p>
+    </div>
+</div>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+</body>
+</html>
